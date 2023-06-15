@@ -1,14 +1,11 @@
 function findMatching(array,names){
-    const list = array.filter(item => item.toUpperCase() === names.toUpperCase())
-    return list
+    return array.filter(item => item.toUpperCase() === names.toUpperCase())
 }
 
 function fuzzyMatch(array,letters){
-    const list = array.filter(item => item.slice(0,2) === letters.slice(0,2))
-    return list
+    return array.filter(item => item.slice(0,2) === letters.slice(0,2))
 }
 
 function matchName(array,string){
-    const list = array.filter(item => item.name === string)
-    return list
+    return array.filter(item => item.name === string)
 }
